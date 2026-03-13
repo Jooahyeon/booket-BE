@@ -10,11 +10,10 @@ import java.util.Date;
 @Getter
 @NoArgsConstructor
 @Table(name = "users")
-public class Users {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
     private Long userId;
 
     @Column(name = "email", nullable = false, length = 50)
